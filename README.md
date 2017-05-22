@@ -4,6 +4,14 @@ Setup a Javascript Development Environment Starter Kit
 2. Run npm init then create a package.json in the folder
 3. Run npm install -g nsp (Node security Platform); 'nsp check'
 4. Install Web server(Install Express) or if choose the Webpack which include Webpack Dev Server.
+* complete setup the express--tools/srcServer.js
+* Add src/index.html
+* node tools/srcServer.js
+5. Share Work-in-progress on public server (WoW, I can do that now...Without setting up the AWS, nginx, Azure, etc)
+
+
+
+
 
 
 
