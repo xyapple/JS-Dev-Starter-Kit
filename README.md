@@ -16,7 +16,39 @@ Setup a Javascript Development Environment Starter Kit
     d). get a url: (https://bpvwgrqkdw.localtunnel.me); share the url to anyone but local server must be open
     e). quit by ctl+C; setup a subdomine(lt --port 3000 --subdomine xyapple)
     f). get a url:(https://xyapple.localtunnel.me)
-
+6. Setup Automation (Grunt Vs Gulp Vs npm Scripts)
+* Try npm scripts
+    - Add startMessage.js in tools for prestart automation
+    - Setup Automation in package.json
+    ```
+    "scripts": {
+      "prestart":"node tools/startMessage.js",
+      "start": "node tools/srcServer.js",
+      "security-check":"nsp check",
+      "localtunnel": "lt --port 3000"
+    },
+    ```
+    - Setup parallel tasks for the Automating the start and security-check
+    ```
+    "scripts": {
+      "prestart":"node tools/startMessage.js",
+      "start": "npm-run-all --parallel security-check open:express",
+      "open:express":"node tools/srcServer.js",
+      "security-check":"nsp check",
+      "localtunnel": "lt --port 3000"
+    },
+    ```
+    -Setup parallel tasks for the start and localtunnel
+    ```
+    "scripts": {
+      "prestart":"node tools/startMessage.js",
+      "start": "npm-run-all --parallel security-check open:express",
+      "open:express":"node tools/srcServer.js",
+      "security-check":"nsp check",
+      "localtunnel": "lt --port 3000",
+      "share":"npm-run-all --parallel open:express localtunnel"
+    },
+    ```
 
 
 
