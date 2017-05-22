@@ -70,8 +70,14 @@ Setup a Javascript Development Environment Starter Kit
 
 }
 ```
-
-
+8. Setup Bundle
+* but why?(Because there are 5 models in the JS words + package project into file/s)
+-- IFE Vs AMD Vs CJS Vs UMD Vs ES6
+* ES6!!
+* browserify Vs. Webpack Vs. Rollup Vs. JSPM
+* Webpack!!
+  a). Setup the .webpack.config.dev.js file in the root
+  b). Configure webpack with express(web server) in the srcServer.js
 
 
 Reference:
