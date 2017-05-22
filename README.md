@@ -8,6 +8,12 @@ Setup a Javascript Development Environment Starter Kit
 * Add src/index.html
 * node tools/srcServer.js
 5. Share Work-in-progress on public server (WoW, I can do that now...Without setting up the AWS, nginx, Azure, etc)
+* Now; Ngrok; Localtunnel; Surge
+* try localtunnel
+    a). npm install localtunnel -g
+    b). run local server first(node tools/srcServer.js)
+    c). run localtunnel (lt --port 3000)
+    d). get a url: (https://bpvwgrqkdw.localtunnel.me); share the url to anyone but local server must be open
 
 
 
