@@ -4,7 +4,10 @@
   "description": "js enviornment setup",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart":"node tools/srcServer.js",
+    "start": "node tools/srcServer.js",
+    "security-check":"nsp check",
+    "localtunnel": "lt --port 3000"
   },
   "repository": {
     "type": "git",
