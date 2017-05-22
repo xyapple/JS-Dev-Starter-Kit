@@ -38,7 +38,7 @@ Setup a Javascript Development Environment Starter Kit
       "localtunnel": "lt --port 3000"
     },
     ```
-    -Setup parallel tasks for the start and localtunnel
+    - Setup parallel tasks for the start and localtunnel
     ```
     "scripts": {
       "prestart":"node tools/startMessage.js",
@@ -49,6 +49,7 @@ Setup a Javascript Development Environment Starter Kit
       "share":"npm-run-all --parallel open:express localtunnel"
     },
     ```
+    - if I need to run automation, i need to 'npm run share'
 
 
 
