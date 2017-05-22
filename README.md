@@ -14,6 +14,8 @@ Setup a Javascript Development Environment Starter Kit
     b). run local server first(node tools/srcServer.js)
     c). run localtunnel (lt --port 3000)
     d). get a url: (https://bpvwgrqkdw.localtunnel.me); share the url to anyone but local server must be open
+    e). quit by ctl+C; setup a subdomine(lt --port 3000 --subdomine xyapple)
+    f). get a url:(https://xyapple.localtunnel.me)
 
 
 
