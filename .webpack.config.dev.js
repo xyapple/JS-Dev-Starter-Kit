@@ -9,15 +9,15 @@ export default {
   ],
   target: 'web',
   output:{
-    path: path.resulve(__dirname, 'src'),
+    path: path.resolve(__dirname, 'src'),
     publicPath: '/',
     filename: 'bundle.js'
   },
   plugins: [],
   module:{
     loader: [
-      {test:/\.js$/, exclude:/node_modules/, loaders:['babel']},
-      {test:/\.css$/, loaders:['style', 'css']}
+      {test: /\.js$/, exclude: /node_modules/, loaders:['babel']},
+      {test:/\.css$/, loaders:'style','css'}
     ]
   }
 }

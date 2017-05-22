@@ -4,12 +4,12 @@
   "description": "js enviornment setup",
   "main": "index.js",
   "scripts": {
-    "prestart":"babel-node tools/startMessage.js",
+    "prestart": "babel-node tools/startMessage.js",
     "start": "npm-run-all --parallel security-check open:express",
-    "open:express":"node tools/srcServer.js",
-    "security-check":"nsp check",
+    "open:express": "babel-node tools/srcServer.js",
+    "security-check": "nsp check",
     "localtunnel": "lt --port 3000",
-    "share":"npm-run-all --parallel open:express localtunnel"
+    "share": "npm-run-all --parallel open:express localtunnel"
   },
   "repository": {
     "type": "git",
@@ -21,13 +21,12 @@
     "url": "https://github.com/xyapple/JS-Dev-Starter-Kit/issues"
   },
   "homepage": "https://github.com/xyapple/JS-Dev-Starter-Kit#readme",
-  "dependencies":{
-
-  },
-  "devDependencies":{
+  "dependencies": {},
+  "devDependencies": {
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",
     "babel-loader": "6.2.5",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-latest": "6.16.0",
     "babel-register": "6.16.3",
     "chai": "3.5.0",
@@ -50,7 +49,7 @@
     "nock": "8.1.0",
     "npm-run-all": "3.1.1",
     "nsp": "2.6.2",
-    "numeral": "1.5.3",
+    "numeral": "2.0.6",
     "open": "0.0.5",
     "rimraf": "2.5.4",
     "style-loader": "0.13.1",
