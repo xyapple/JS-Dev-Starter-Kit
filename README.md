@@ -50,8 +50,26 @@ Setup a Javascript Development Environment Starter Kit
     },
     ```
     - if I need to run automation, i need to 'npm run share'
+7. Setup Transpiler (Babel Vs TypeScript Vs Elm)
+* create a .babelrc under in the root of file
+* in .babelrc file write
+```
+{
+  "presets":[
+    "latest"
+  ]
+}
+```
+* Update the scripts
+```
+  "prestart":"babel-node tools/startMessage.js",
+```
+* Note: if not to create the .babelrc file, I can just use package.json
+```
+"babel":{
 
-
+}
+```
 
 
 
