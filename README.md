@@ -82,7 +82,22 @@ Setup a Javascript Development Environment Starter Kit
   d). update the index.html to include the index.js
 9. Setup Linter
 * ESLint!
-
+* Add ESLint via package.json file
+```
+{
+  "name": "mypackage",
+  "version": "0.0.1",
+  "eslintConfig": {
+    "plugins": ["example"],
+    "env":{
+      "example/custom": true
+    }
+  }
+}
+```
+* Use ESLint preset
+* ESLint won't watch file; but use eslint-watch package will do the job.
+* Add .eslintrc.json in the root of the project.
 
 Reference:
 Building a JavaScript Development Environment by Cory Hose (Pluralsight course)
