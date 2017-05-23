@@ -114,7 +114,21 @@ Setup a Javascript Development Environment Starter Kit
 * Travis CI(Mac & Linx) and Appveyor(Window)
 
 11. HTTP Calls
-
+* Node (http; request)
+* Browser(XMLHttpRequest; jQuery; Framework buildin http; Fetch)
+* Node & Browser(isomorphic-fetch; xhr; SuperAgent; Axios)
+```
+#example of Axios(promise based)
+axios({
+  url:'http://xxx.com/user',
+  method:'post',
+  header:{
+    'Content-type': 'text/html; charset-UTF-8'
+  },
+  data: text
+  }).then(onSuccess, onError)
+```
+* ### Centralize API Calls
 
 
 
