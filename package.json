@@ -8,6 +8,7 @@
     "start": "npm-run-all --parallel security-check open:express",
     "open:express": "babel-node tools/srcServer.js",
     "security-check": "nsp check",
+    "lint":"esw webpack.config.* src tools",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel open:express localtunnel"
   },
