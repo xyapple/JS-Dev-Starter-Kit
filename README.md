@@ -109,6 +109,13 @@ Setup a Javascript Development Environment Starter Kit
 * Where to put the test: create a test folder; placing them alongside of the src folder.
 * When to run the test: Unit test needs to run every time save file.
   - Create a testSetup.js under the tools folder
+* ### Continuous Integration!!! (Oh my! now I cannot blame on other machine)
+* CI Server-- Travis Vs Appveyor Vs Jenkins Vs circleci Vs Semaphore Vs SnapCI
+* Travis CI(Mac & Linx) and Appveyor(Window)
+
+
+
+
 
 Reference:
 Building a JavaScript Development Environment by Cory Hose (Pluralsight course)
