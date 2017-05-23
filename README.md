@@ -113,6 +113,9 @@ Setup a Javascript Development Environment Starter Kit
 * CI Server-- Travis Vs Appveyor Vs Jenkins Vs circleci Vs Semaphore Vs SnapCI
 * Travis CI(Mac & Linx) and Appveyor(Window)
 
+11. HTTP Calls
+
+
 
 
 
