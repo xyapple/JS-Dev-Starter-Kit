@@ -80,6 +80,8 @@ Setup a Javascript Development Environment Starter Kit
   b). Configure webpack with express(web server) in the srcServer.js
   c). create a index.js file in the src folder to test the webpack
   d). update the index.html to include the index.js
+9. Setup Linter
+* ESLint!
 
 
 Reference:
