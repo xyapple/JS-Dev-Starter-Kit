@@ -99,6 +99,17 @@ Setup a Javascript Development Environment Starter Kit
 * ESLint won't watch file; but use eslint-watch package will do the job.
 * Add .eslintrc.json in the root of the project.
 
+10. Setting Unit testing (not UI and Integration testing)
+* Unit testing signal function or model, fast, run upon save.
+* Integration test: testing multiple units; clicking and waiting, but slower, run on demand or QA.
+* testing framework(Mocha Vs Jasmine Vs Tape Vs QUnit Vs AVA Vs Jest)--Mocha!!
+* Assertion Library: Mocha does not have it build in(Jest has). Chai is a popular one.
+* Helper Library: JSDOM(Simulate the browser for testing).
+* In-memory DOM: place to run testing(JSDOM)
+* Where to put the test: create a test folder; placing them alongside of the src folder.
+* When to run the test: Unit test needs to run every time save file.
+  - Create a testSetup.js under the tools folder
+
 Reference:
 Building a JavaScript Development Environment by Cory Hose (Pluralsight course)
 Setting Up a React.js Environment Using Npm, Babel 6 and Webpack (https://www.codementor.io/tamizhvendan/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr)
