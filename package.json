@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "prestart": "babel-node tools/startMessage.js",
-    "start": "npm-run-all --parallel security-check open:express",
+    "start": "npm-run-all --parallel security-check open:express lint:watch",
     "open:express": "babel-node tools/srcServer.js",
     "security-check": "nsp check",
-    "lint":"esw webpack.config.* src tools",
+    "lint":"esw webpack.config.* src tools --color",
+    "lint:watch": "npm run lint -- --watch",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel open:express localtunnel"
   },
